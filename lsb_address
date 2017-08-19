@@ -1,0 +1,1 @@
+printf %016x $1|tac -rs..|sed 's/\(..\)/\1\\x/g'|sed 's/^/\\x/'|sed 's/\\x$//g'
